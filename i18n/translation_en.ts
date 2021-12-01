@@ -2,7 +2,7 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="en" sourcelanguage="ru">
 <context>
-    <name>Plugin</name>
+    <name>com_github_kasim73_tile_services</name>
     <message>
         <location filename="../__init__.py" line="51"/>
         <source>Карты из Интернета</source>
@@ -23,9 +23,6 @@
         <source>Команды</source>
         <translation>Commands</translation>
     </message>
-</context>
-<context>
-    <name>TmsTreeWidget</name>
     <message>
         <location filename="../TmsTreeWidget.py" line="109"/>
         <source>Сохранение файла</source>
@@ -33,12 +30,10 @@
     </message>
     <message>
         <location filename="../TmsTreeWidget.py" line="144"/>
+        <location filename="../TmsWidget.py" line="152"/>
         <source>Ошибка</source>
         <translation>Error</translation>
     </message>
-</context>
-<context>
-    <name>TmsWidget</name>
     <message>
         <location filename="../TmsWidget.py" line="34"/>
         <source>Открыть</source>
@@ -103,11 +98,6 @@
         <location filename="../TmsWidget.py" line="150"/>
         <source>Список обновлен</source>
         <translation>List has been updated</translation>
-    </message>
-    <message>
-        <location filename="../TmsWidget.py" line="152"/>
-        <source>Ошибка</source>
-        <translation>Error</translation>
     </message>
 </context>
 </TS>

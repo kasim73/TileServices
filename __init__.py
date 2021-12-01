@@ -20,7 +20,7 @@ class DockWidget(QDockWidget):
         super().closeEvent(event)
 
 
-class Plugin(QObject, AxiomaPlugin):
+class Plugin(AxiomaPlugin):
     def load(self):
         self.__button = self.create_action(
             self.tr('Карты из Интернета'),

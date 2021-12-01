@@ -24,6 +24,7 @@ class TmsWidget(QWidget):
     def __init__(self, plugin) -> None:
         super().__init__()
         self.__plugin = plugin
+        self.tr = plugin.tr
         layout = QVBoxLayout()
         layout.setContentsMargins(0,0,0,0)
 
