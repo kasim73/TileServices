@@ -635,6 +635,23 @@
 			]
 		},
 		{
+      "name": "Росреестр",
+      "image": "rosreestr",
+      "tms": [
+       {
+					"name": "rosreestr",
+					"title": "Единая картоснова (ЕЭКО)",
+					"description": "Точность и полнота ЕЭКО позволяет использовать ее в качестве картографической основы (подложки, базовой карты, картографического фона) для отображения в наглядной форме пользовательской тематической информации, а также в качестве базовой геопривязанной информации для решения различных прикладных и расчетных задач (измерение площадей и координат любой точки или объекта в геодезических и прямоугольных координатах, в местной системе координат).",
+					"type": "xyz",
+					"url": "https://ngw.fppd.cgkipd.ru/tile/56/{LEVEL}/{ROW}/{COL}.png",
+					"level": {
+						"min" : 3,
+						"max" : 14
+					}
+        }
+      ]
+		},
+		{
 			"name": "Яндекс",
 			"image": "yandex",
 			"tms": [
@@ -759,6 +776,10 @@
     "yandex" : { 
 		"format": "svg",
 		"data": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIg0KCSBpZD0ic3ZnMiIgaW5rc2NhcGU6b3V0cHV0X2V4dGVuc2lvbj0ib3JnLmlua3NjYXBlLm91dHB1dC5zdmcuaW5rc2NhcGUiIGlua3NjYXBlOnZlcnNpb249IjAuNDYiIHNvZGlwb2RpOmRvY25hbWU9IllhbmRleF9sb2dvX3JnYl9uYWlkZXRzeWF2c2VfdGV4dC5zdmciIHNvZGlwb2RpOnZlcnNpb249IjAuMzIiIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6aW5rc2NhcGU9Imh0dHA6Ly93d3cuaW5rc2NhcGUub3JnL25hbWVzcGFjZXMvaW5rc2NhcGUiIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIgeG1sbnM6c29kaXBvZGk9Imh0dHA6Ly9zb2RpcG9kaS5zb3VyY2Vmb3JnZS5uZXQvRFREL3NvZGlwb2RpLTAuZHRkIiB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIg0KCSB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDEwMC43IDIxMC45Ig0KCSBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxMDAuNyAyMTAuOTsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4NCgkuc3Qwe2ZpbGw6I0ZGMDMwMzt9DQo8L3N0eWxlPg0KPHNvZGlwb2RpOm5hbWVkdmlldyAgYm9yZGVyY29sb3I9IiM2NjY2NjYiIGJvcmRlcm9wYWNpdHk9IjEuMCIgZ3JpZHRvbGVyYW5jZT0iMTAuMCIgZ3VpZGV0b2xlcmFuY2U9IjEwLjAiIGlkPSJiYXNlIiBpbmtzY2FwZTpjdXJyZW50LWxheWVyPSJzdmcyIiBpbmtzY2FwZTpjeD0iMTQ1LjQxMzY0IiBpbmtzY2FwZTpjeT0iNDAuMzAzNTA5IiBpbmtzY2FwZTpwYWdlb3BhY2l0eT0iMC4wIiBpbmtzY2FwZTpwYWdlc2hhZG93PSIyIiBpbmtzY2FwZTp3aW5kb3ctaGVpZ2h0PSI4NDQiIGlua3NjYXBlOndpbmRvdy13aWR0aD0iMTQ0MCIgaW5rc2NhcGU6d2luZG93LXg9Ii00IiBpbmtzY2FwZTp3aW5kb3cteT0iLTQiIGlua3NjYXBlOnpvb209IjAuNzQyNTY5OTMiIG9iamVjdHRvbGVyYW5jZT0iMTAuMCIgcGFnZWNvbG9yPSIjZmZmZmZmIiBzaG93Z3JpZD0iZmFsc2UiPg0KCTwvc29kaXBvZGk6bmFtZWR2aWV3Pg0KPGRlZnM+DQoJDQoJDQoJCTxpbmtzY2FwZTpwZXJzcGVjdGl2ZSAgaWQ9InBlcnNwZWN0aXZlNjEiIGlua3NjYXBlOnBlcnNwM2Qtb3JpZ2luPSI2NC43NTI1MDIgOiAyNS4wOTcxNjUgOiAxIiBpbmtzY2FwZTp2cF94PSIwIDogMzcuNjQ1NzQ4IDogMSIgaW5rc2NhcGU6dnBfeT0iMCA6IDEwMDAgOiAwIiBpbmtzY2FwZTp2cF96PSIxMjkuNTA1IDogMzcuNjQ1NzQ4IDogMSIgc29kaXBvZGk6dHlwZT0iaW5rc2NhcGU6cGVyc3AzZCI+DQoJCTwvaW5rc2NhcGU6cGVyc3BlY3RpdmU+DQo8L2RlZnM+DQo8ZyBpZD0iZzEyIiB0cmFuc2Zvcm09InNjYWxlKDQuNjMzMDAzNyw0LjYzMzAwMzcpIj4NCgk8ZyBpZD0iZzM4Ij4NCgkJPHBhdGggaWQ9InBhdGg0MCIgY2xhc3M9InN0MCIgZD0iTTIxLjEsMGgtNi45QzcuNCwwLDEuNiw1LjIsMS42LDE1LjJjMCw2LDIuOCwxMC40LDcuNywxMi42TDAuMSw0NC42Yy0wLjMsMC41LDAsMSwwLjUsMWg0LjMNCgkJCWMwLjQsMCwwLjYtMC4xLDAuNy0wLjRMMTQsMjguN2gzdjE2LjVjMCwwLjIsMC4yLDAuNCwwLjQsMC40aDMuOGMwLjQsMCwwLjUtMC4yLDAuNS0wLjVWMC42QzIxLjcsMC4yLDIxLjUsMCwyMS4xLDB6IE0xNy4xLDI0LjgNCgkJCWgtMi41Yy00LDAtNy45LTIuOS03LjktMTAuMkM2LjcsNywxMC4zLDMuOSwxNCwzLjloMy4xVjI0Ljh6Ii8+DQoJPC9nPg0KPC9nPg0KPGcgaWQ9Imc1NiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOC4zMjI4MzE4ZS03LDI3My41MzQzKSI+DQo8L2c+DQo8L3N2Zz4NCg=="
+    },
+    "rosreestr" : {
+		"format": "png",
+		"data": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAatJREFUOI2dkz9MU1EUh79z3+u75WERU+IfMJi6WIrEhMRI4qIbm6M4uLmx6WJcGd1M3EQMhATjQsJASBwdjNEBQovGBKjESgVJDE2FV969LvRZ8DUK33Rvzvl+95zhCo28sLCDRvGStfl+Wi582bzf7lUq1Q4/6b/bba0Nta0kOHlRIsUF4KmFFiBgmqW5W1HV6ywB3lpxNQNksNy+1JubKlXtHW0h3SooADTwbTlPvkH+g41OAp8KhaEEvAn3h1A8s2CY5fvnXIwcy8elwnWB8c3QojCkyc8N/q/cEHI33AEFPD+qXEeEMZfVD1cbtjxIuOdYiyNIbIsxZsCls38Ra/N/VW2oCBKLbhKv50rPBmAODwD8kK9blWLs46Fx2lKp9xNa9FZh4LKogwHWoNq7dMldXil2N9sxm82Vaus39G75xPm4evJcuqyayfU1Rcnh0SP8U97rfwU0RfvutsDDYwdkrp0e+UmVYwVkb555EhI8HpbJ/c/UHMeE1qlfUh263NWXfhDwa/KeTAAg61X7Ns4UcMSyMOMPOh7dZ0GNBtReldngkcxEfb8BvWONSXQLmBkAAAAASUVORK5CYII="
     }
   }
 }
