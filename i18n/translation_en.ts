@@ -86,8 +86,8 @@
     </message>
     <message>
         <location filename="../TmsWidget.py" line="137"/>
-        <source>Подтверждение</source>
-        <translation>Confirmation</translation>
+        <source>Карты из Интернета</source>
+        <translation>Internet maps</translation>
     </message>
     <message>
         <location filename="../TmsWidget.py" line="137"/>

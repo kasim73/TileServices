@@ -147,7 +147,7 @@ class TmsWidget(QWidget):
 
     def __refresh_triggered(self):
         from urllib.request import Request, urlopen
-        if QMessageBox.question(self.__plugin.window(), self.tr('Подтверждение'), 
+        if QMessageBox.question(self.__plugin.window(), self.tr('Карты из Интернета'),
                 self.tr('Обновить данные?')) != QMessageBox.Yes:
             return
         file_name  = self.__tree.json_file
