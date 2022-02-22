@@ -2,6 +2,7 @@ import os
 from pathlib import Path
 import xml.etree.cElementTree as tree
 import xml.dom.minidom
+import re
 
 
 def generate_tile_tab_file(fn, data):
@@ -14,13 +15,17 @@ def generate_tile_tab_file(fn, data):
     tab.write('Definition Table\n')
     tab.write('  File "{}"\n'.format(xml_fn))
     tab.write('  Type "TILESERVER"\n')
-    prj = data.get('prj',  'CoordSys Earth Projection 10, 157, "m", 0')
+    prj = data.get('prj',  'CoordSys Earth Projection 10, 157, "m", 0 Bounds (-20037508.34, -20037508.34) (20037508.34, 20037508.34)')
     tab.write(' {}\n'.format(prj))
     tab.write('ReadOnly\n')
     tab.close()
     # write xml file
     root = tree.Element("TileServerInfo", Type = 'QuadKey' if data['typeAddress'] == 'quadkey' else 'LevelRowColumn')
-    tree.SubElement(root, "Url").text = data['url']
+    url = data['url']
+    m = re.search('\[\w+\]', url)
+    if m is not None: # compatibility with MapInfo
+        url = url.replace(m.group(0), m.group(0)[1])
+    tree.SubElement(root, "Url").text = url
     tree.SubElement(root, "MinLevel").text = str(data.get('min', 0))
     tree.SubElement(root, "MaxLevel").text = str(data.get('max', 19))
     size = data.get('size', (256,256))
