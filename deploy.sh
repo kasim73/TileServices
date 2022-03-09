@@ -23,3 +23,4 @@ find . | grep -E "(\.git|__pycache__|\.pyc|\.DS_Store|\.dSYM$|\.pyo$|\.ts|\.pro)
 sed -i -e "/^version=.*/a build_number=${build_number}" manifest.ini
 cd ${build_dir}
 zip -r ${plugin_id}-${build_number}.axp ${plugin_id}
+rm -r ${plugin_id}
