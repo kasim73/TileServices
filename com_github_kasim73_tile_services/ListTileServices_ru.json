@@ -509,7 +509,7 @@
 					"title": "Карта (рус)",
 					"description": "Подробная карта TomTom.<br/><a href=\"https://www.tomtom.com/legal\">©TomTom<\\a>",
 					"type": "xyz",
-					"url": "https://[abcd]-mydrive.api-system.tomtom.com/map/1/tile/basic/main/{LEVEL}/{ROW}/{COL}.png?key=sATA9OwG11zrMKQcCxR3eSEjj2n8Jsrg&language=ru",
+					"url": "https://[abcd].api.tomtom.com/map/1/tile/basic/main/{LEVEL}/{ROW}/{COL}.png?key=GAVaqXo5eqIKR6TyjJCVJ1EMfXetN9wc&language=en",
 					"level": {
 						"min" : 1,
 						"max" : 22
@@ -520,28 +520,28 @@
 					"title": "Карта (англ)",
 					"description": "Подробная карта TomTom на английском.<br/><a href=\"https://www.tomtom.com/legal\">©TomTom<\\a>",
 					"type": "xyz",
-					"url": "https://[abcd]-mydrive.api-system.tomtom.com/map/1/tile/basic/main/{LEVEL}/{ROW}/{COL}.png?key=sATA9OwG11zrMKQcCxR3eSEjj2n8Jsrg&language=en"
+					"url": "https://[abcd].api.tomtom.com/map/1/tile/basic/main/{LEVEL}/{ROW}/{COL}.png?key=GAVaqXo5eqIKR6TyjJCVJ1EMfXetN9wc&language=en"
 				},
 				{
 					"name": "tomtom_blackmap_ru",
 					"title": "Карта тёмная (рус)",
 					"description": "Подробная тёмная карта TomTom в .<br/><a href=\"https://www.tomtom.com/legal\">©TomTom<\\a>",
 					"type": "xyz",
-					"url": "https://[abcd]-mydrive.api-system.tomtom.com/map/1/tile/basic/night/{LEVEL}/{ROW}/{COL}.png?key=sATA9OwG11zrMKQcCxR3eSEjj2n8Jsrg&language=ru"
+					"url": "https://[abcd].api.tomtom.com/map/1/tile/basic/night/{LEVEL}/{ROW}/{COL}.png?key=GAVaqXo5eqIKR6TyjJCVJ1EMfXetN9wc&language=en"
 				},
 				{
 					"name": "tomtom_blackmap_en",
 					"title": "Карта тёмная (англ)",
 					"description": "Подробная тёмная карта TomTom на английском.<br/><a href=\"https://www.tomtom.com/legal\">©TomTom<\\a>",
 					"type": "xyz",
-					"url": "https://[abcd]-mydrive.api-system.tomtom.com/map/1/tile/basic/night/{LEVEL}/{ROW}/{COL}.png?key=sATA9OwG11zrMKQcCxR3eSEjj2n8Jsrg&language=en"
+					"url": "https://[abcd].api.tomtom.com/map/1/tile/basic/night/{LEVEL}/{ROW}/{COL}.png?key=GAVaqXo5eqIKR6TyjJCVJ1EMfXetN9wc&language=en"
 				},
 				{
 					"name": "tomtom_schema_ru",
 					"title": "Схема (рус)",
 					"description": "Схема TomTom на прозрачной подложке, состоящая из границ, улиц и других объектов с названиями.<br/><a href=\"https://www.tomtom.com/legal\">©TomTom<\\a>",
 					"type": "xyz",
-					"url": "https://[abcd]-mydrive.api-system.tomtom.com/map/1/tile/hybrid/main/{LEVEL}/{ROW}/{COL}.png?key=sATA9OwG11zrMKQcCxR3eSEjj2n8Jsrg&language=ru",
+					"url": "https://[abcd].api.tomtom.com/map/1/tile/hybrid/main/{LEVEL}/{ROW}/{COL}.png?key=GAVaqXo5eqIKR6TyjJCVJ1EMfXetN9wc&language=en",
 					"level": {
 						"min" : 1,
 						"max" : 22
@@ -552,14 +552,14 @@
 					"title": "Схема (англ)",
 					"description": "Схема TomTom на прозрачной подложке, состоящая из границ, улиц и других объектов с названиями.<br/><a href=\"https://www.tomtom.com/legal\">©TomTom<\\a>",
 					"type": "xyz",
-					"url": "https://[abcd]-mydrive.api-system.tomtom.com/map/1/tile/hybrid/main/{LEVEL}/{ROW}/{COL}.png?key=sATA9OwG11zrMKQcCxR3eSEjj2n8Jsrg&language=en"
+					"url": "https://[abcd].api.tomtom.com/map/1/tile/hybrid/main/{LEVEL}/{ROW}/{COL}.png?key=GAVaqXo5eqIKR6TyjJCVJ1EMfXetN9wc&language=en"
 				},
 				{
 					"name": "tomtom_names_ru",
 					"title": "Названия (рус)",
 					"description": "Названия TomTom на прозрачной подложке, состоящая из стран, городов и улиц.<br/><a href=\"https://www.tomtom.com/legal\">©TomTom<\\a>",
 					"type": "xyz",
-					"url": "https://[abcd]-mydrive.api-system.tomtom.com/map/1/tile/labels/main/{LEVEL}/{ROW}/{COL}.png?key=sATA9OwG11zrMKQcCxR3eSEjj2n8Jsrg&language=ru",
+					"url": "https://[abcd].api.tomtom.com/map/1/tile/labels/main/{LEVEL}/{ROW}/{COL}.png?key=GAVaqXo5eqIKR6TyjJCVJ1EMfXetN9wc&language=en",
 					"level": {
 						"min" : 1,
 						"max" : 22
@@ -570,14 +570,14 @@
 					"title": "Названия (англ)",
 					"description": "Названия TomTom на английском на прозрачной подложке, состоящая из стран, городов и улиц.<br/><a href=\"https://www.tomtom.com/legal\">©TomTom<\\a>",
 					"type": "xyz",
-					"url": "https://[abcd]-mydrive.api-system.tomtom.com/map/1/tile/labels/main/{LEVEL}/{ROW}/{COL}.png?key=sATA9OwG11zrMKQcCxR3eSEjj2n8Jsrg&language=en"
+					"url": "https://[abcd].api.tomtom.com/map/1/tile/labels/main/{LEVEL}/{ROW}/{COL}.png?key=GAVaqXo5eqIKR6TyjJCVJ1EMfXetN9wc&language=en"
 				},
 				{
 					"name": "tomtom_blacknames_ru",
 					"title": "Названия тёмные (рус)",
 					"description": "Названия тёмные TomTom на прозрачной подложке, состоящая из стран, городов и улиц.<br/><a href=\"https://www.tomtom.com/legal\">©TomTom<\\a>",
 					"type": "xyz",
-					"url": "https://[abcd]-mydrive.api-system.tomtom.com/map/1/tile/labels/night/{LEVEL}/{ROW}/{COL}.png?key=sATA9OwG11zrMKQcCxR3eSEjj2n8Jsrg&language=ru",
+					"url": "https://[abcd].api.tomtom.com/map/1/tile/labels/night/{LEVEL}/{ROW}/{COL}.png?key=GAVaqXo5eqIKR6TyjJCVJ1EMfXetN9wc&language=en",
 					"level": {
 						"min" : 1,
 						"max" : 22
@@ -588,14 +588,14 @@
 					"title": "Названия тёмные (англ)",
 					"description": "Названия тёмные TomTom на английском на прозрачной подложке, состоящая из стран, городов и улиц.<br/><a href=\"https://www.tomtom.com/legal\">©TomTom<\\a>",
 					"type": "xyz",
-					"url": "https://[abcd]-mydrive.api-system.tomtom.com/map/1/tile/labels/night/{LEVEL}/{ROW}/{COL}.png?key=sATA9OwG11zrMKQcCxR3eSEjj2n8Jsrg&language=en"
+					"url": "https://[abcd].api.tomtom.com/map/1/tile/labels/night/{LEVEL}/{ROW}/{COL}.png?key=GAVaqXo5eqIKR6TyjJCVJ1EMfXetN9wc&language=en"
 				},				
 				{
 					"name": "tomtom_traffic",
 					"title": "Пробки",
 					"description": "Пробки TomTom на прозрачной подложке.<br/><a href=\"https://www.tomtom.com/legal\">©TomTom<\\a>",
 					"type": "xyz",
-					"url": "https://[abcd]-mydrive.api-system.tomtom.com/traffic/map/4/tile/flow/relative/{LEVEL}/{ROW}/{COL}.png?key=sATA9OwG11zrMKQcCxR3eSEjj2n8Jsrg&language=ru",
+					"url": "https://[abcd].api.tomtom.com/traffic/map/4/tile/flow/relative/{LEVEL}/{ROW}/{COL}.png?key=GAVaqXo5eqIKR6TyjJCVJ1EMfXetN9wc&language=en",
 					"level": {
 						"min" : 6,
 						"max" : 22
@@ -618,19 +618,19 @@
 			]
 		},
 		{
-			"name": "Маршруты",
-			"image": "marshruty",
+			"name": "Topomapper",
+			"image": "",
 			"tms": [
 				{
-					"name": "marshruty",
-					"title": "Топографическая карта",
-					"description": "Топографическая карта Маршруты.Ру<br/><a href=\"www.marshruty.ru/Helps/agreement.aspx\">©МАРШРУТЫ<\\a>",
+					"name": "ussr_maps",
+					"title": "Советские топокарты",
+					"description": "",
 					"type": "xyz",
-					"url": "http://maps.marshruty.ru/ml.ashx?al=1&i=1&x={ROW}&y={COL}&z={LEVEL}",
+					"url": "http://88.99.52.155/cgi-bin/tapp/tilecache.py/1.0.0/topomapper_v2/{LEVEL}/{ROW}/{COL}",
 					"level": {
-						"min" : 8,
+						"min" : 0,
 						"max" : 13
-					}					
+					}
 				}
 			]
 		},
