@@ -509,7 +509,7 @@
 					"title": "Карта (рус)",
 					"description": "Подробная карта TomTom.<br/><a href=\"https://www.tomtom.com/legal\">©TomTom<\\a>",
 					"type": "xyz",
-					"url": "https://[abcd].api.tomtom.com/map/1/tile/basic/main/{LEVEL}/{ROW}/{COL}.png?key=GAVaqXo5eqIKR6TyjJCVJ1EMfXetN9wc&language=en",
+					"url": "https://[abcd].api.tomtom.com/map/1/tile/basic/main/{LEVEL}/{ROW}/{COL}.png?key=GAVaqXo5eqIKR6TyjJCVJ1EMfXetN9wc&language=ru",
 					"level": {
 						"min" : 1,
 						"max" : 22
@@ -527,7 +527,7 @@
 					"title": "Карта тёмная (рус)",
 					"description": "Подробная тёмная карта TomTom в .<br/><a href=\"https://www.tomtom.com/legal\">©TomTom<\\a>",
 					"type": "xyz",
-					"url": "https://[abcd].api.tomtom.com/map/1/tile/basic/night/{LEVEL}/{ROW}/{COL}.png?key=GAVaqXo5eqIKR6TyjJCVJ1EMfXetN9wc&language=en"
+					"url": "https://[abcd].api.tomtom.com/map/1/tile/basic/night/{LEVEL}/{ROW}/{COL}.png?key=GAVaqXo5eqIKR6TyjJCVJ1EMfXetN9wc&language=ru"
 				},
 				{
 					"name": "tomtom_blackmap_en",
@@ -541,7 +541,7 @@
 					"title": "Схема (рус)",
 					"description": "Схема TomTom на прозрачной подложке, состоящая из границ, улиц и других объектов с названиями.<br/><a href=\"https://www.tomtom.com/legal\">©TomTom<\\a>",
 					"type": "xyz",
-					"url": "https://[abcd].api.tomtom.com/map/1/tile/hybrid/main/{LEVEL}/{ROW}/{COL}.png?key=GAVaqXo5eqIKR6TyjJCVJ1EMfXetN9wc&language=en",
+					"url": "https://[abcd].api.tomtom.com/map/1/tile/hybrid/main/{LEVEL}/{ROW}/{COL}.png?key=GAVaqXo5eqIKR6TyjJCVJ1EMfXetN9wc&language=ru",
 					"level": {
 						"min" : 1,
 						"max" : 22
@@ -559,7 +559,7 @@
 					"title": "Названия (рус)",
 					"description": "Названия TomTom на прозрачной подложке, состоящая из стран, городов и улиц.<br/><a href=\"https://www.tomtom.com/legal\">©TomTom<\\a>",
 					"type": "xyz",
-					"url": "https://[abcd].api.tomtom.com/map/1/tile/labels/main/{LEVEL}/{ROW}/{COL}.png?key=GAVaqXo5eqIKR6TyjJCVJ1EMfXetN9wc&language=en",
+					"url": "https://[abcd].api.tomtom.com/map/1/tile/labels/main/{LEVEL}/{ROW}/{COL}.png?key=GAVaqXo5eqIKR6TyjJCVJ1EMfXetN9wc&language=ru",
 					"level": {
 						"min" : 1,
 						"max" : 22
@@ -577,7 +577,7 @@
 					"title": "Названия тёмные (рус)",
 					"description": "Названия тёмные TomTom на прозрачной подложке, состоящая из стран, городов и улиц.<br/><a href=\"https://www.tomtom.com/legal\">©TomTom<\\a>",
 					"type": "xyz",
-					"url": "https://[abcd].api.tomtom.com/map/1/tile/labels/night/{LEVEL}/{ROW}/{COL}.png?key=GAVaqXo5eqIKR6TyjJCVJ1EMfXetN9wc&language=en",
+					"url": "https://[abcd].api.tomtom.com/map/1/tile/labels/night/{LEVEL}/{ROW}/{COL}.png?key=GAVaqXo5eqIKR6TyjJCVJ1EMfXetN9wc&language=ru",
 					"level": {
 						"min" : 1,
 						"max" : 22
@@ -595,7 +595,7 @@
 					"title": "Пробки",
 					"description": "Пробки TomTom на прозрачной подложке.<br/><a href=\"https://www.tomtom.com/legal\">©TomTom<\\a>",
 					"type": "xyz",
-					"url": "https://[abcd].api.tomtom.com/traffic/map/4/tile/flow/relative/{LEVEL}/{ROW}/{COL}.png?key=GAVaqXo5eqIKR6TyjJCVJ1EMfXetN9wc&language=en",
+					"url": "https://d.api.tomtom.com/traffic/map/4/tile/flow/relative/{LEVEL}/{ROW}/{COL}.png?key=sATA9OwG11zrMKQcCxR3eSEjj2n8Jsrg",
 					"level": {
 						"min" : 6,
 						"max" : 22
