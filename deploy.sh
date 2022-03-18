@@ -1,11 +1,11 @@
 #!/bin/bash
 
 if [[ $# -ne 1 ]]; then
-    echo "Usage: ${0} <build_number>"
-    exit 1
+    read -p "Enter build number: " build_number
+else
+    build_number=${1}
 fi
 
-build_number=${1}
 plugin_id="com_github_kasim73_tile_services"
 root_dir="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 source_dir_name=com_github_kasim73_tile_services
