@@ -22,7 +22,7 @@ def generate_tile_tab_file(fn, data):
     # write xml file
     root = tree.Element("TileServerInfo", Type = 'QuadKey' if data['typeAddress'] == 'quadkey' else 'LevelRowColumn')
     url = data['url']
-    m = re.search('\[\w+\]', url)
+    m = re.search(r'\[\w+\]', url)
     if m is not None: # compatibility with MapInfo
         url = url.replace(m.group(0), m.group(0)[1])
     tree.SubElement(root, "Url").text = url
