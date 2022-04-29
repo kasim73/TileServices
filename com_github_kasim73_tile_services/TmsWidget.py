@@ -145,8 +145,20 @@ class TmsWidget(QWidget):
         else:
             self.__tree.collapseAll()
 
+    def __update_file(self, file_name, data):
+        if os.path.isfile(file_name) and data is not None:
+            bak_file_name = file_name + '.BAK'
+            if os.path.exists(bak_file_name):
+                os.remove(bak_file_name)
+            os.rename(file_name, bak_file_name)
+        f = open(file_name, "wb")
+        f.write(data)
+        f.close()
+
     def __refresh_triggered(self):
         from urllib.request import Request, urlopen
+        from pathlib import Path
+        from axipy.app import Version
         if QMessageBox.question(self.__plugin.window(), self.tr('Карты из Интернета'),
                 self.tr('Обновить данные?')) != QMessageBox.Yes:
             return
@@ -154,21 +166,22 @@ class TmsWidget(QWidget):
         try:
             req = Request(self.__update_url, headers={'User-Agent': 'Mozilla/5.0'})
             data = urlopen(req).read()
-            if os.path.isfile(file_name) and data is not None:
-                bak_file_name = file_name + '.BAK'
-                if os.path.exists(bak_file_name):
-                    os.remove(bak_file_name)
-                os.rename(file_name, bak_file_name)
-            f = open(file_name, "wb")
-            f.write(data)
-            f.close()
+            try:
+                self.__update_file(file_name, data)
+            except PermissionError:
+                if (Version.segments()[0] >= 4):
+                    Path(self.__plugin.user_plugin_data_dir()).mkdir(parents=True, exist_ok=True)
+                    file_name = self.__plugin.user_plugin_data_dir(json_filename(self.__plugin.language))
+                    self.__update_file(file_name, data)
+                else:
+                    raise
             self.__tree.refresh_tree()
-            self.__plugin.notifications.push('', self.tr('Список обновлен'), Notifications.Information)
+            self.__plugin.notifications.push('', self.tr(f"Список '{file_name}' обновлен"), Notifications.Information)
         except Exception as error:
             QMessageBox.critical(self.__plugin.window(), self.tr('Ошибка'), str(error))
 
     def __help_triggered(self):
-        file_name = self.__plugin.local_file(doc_index_filename(self.__plugin.language))
+        file_name = self.__plugin.local_file(os.path.join('documentation', doc_index_filename(self.__plugin.language)))
         url = QUrl.fromLocalFile(file_name)
         QDesktopServices.openUrl( url.toString() )
 

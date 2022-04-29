@@ -36,7 +36,15 @@ class TmsTreeWidget(QTreeWidget):
 
     @property
     def json_file(self):
-        file_name = self.__plugin.local_file(json_filename(self.__plugin.language))
+        from axipy.app import Version
+        fn = json_filename(self.__plugin.language)
+        # Check in the user catalog
+        if (Version.segments()[0] >= 4):
+            file_name = self.__plugin.user_plugin_data_dir(fn)
+            if os.path.isfile(file_name):
+                return file_name
+        # Check in the current catalog
+        file_name = self.__plugin.local_file(fn)
         if os.path.isfile(file_name):
             return file_name
         return self.__plugin.local_file('ListTileServices_ru.json')

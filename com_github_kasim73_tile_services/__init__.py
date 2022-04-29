@@ -1,7 +1,8 @@
 from axipy import AxiomaPlugin, Position
-from axipy.app import mainwindow
+from axipy.app import mainwindow, Version
 
 from PySide2.QtWidgets import QDockWidget
+from PySide2.QtGui import QIcon
 from PySide2.QtCore import Qt, Signal, QObject
 
 from .TmsWidget import TmsWidget
@@ -22,9 +23,10 @@ class DockWidget(QDockWidget):
 
 class Plugin(AxiomaPlugin):
     def load(self):
+        self.__icon = QIcon(self.local_file('tms_icon.svg'))
         self.__button = self.create_action(
             self.tr('Карты из Интернета'),
-            icon = self.local_file('tms_icon.svg'),
+            icon = self.__icon,
             on_click = self.show_widget,
             tooltip = self.tr('Добавление слоя из каталога Интернет-карт'),
             doc_file = doc_index_filename(self.language))
@@ -51,7 +53,10 @@ class Plugin(AxiomaPlugin):
             self.__dock = DockWidget(self.tr('Карты из Интернета'))
             self.__dock.setWidget(TmsWidget(self))
             self.__dock.setAllowedAreas(Qt.LeftDockWidgetArea | Qt.RightDockWidgetArea)
-            mainwindow.add_dock_widget(self.__dock, Qt.RightDockWidgetArea)
+            if (Version.segments()[0] >= 4):
+                mainwindow.add_dock_widget(self.__dock, Qt.RightDockWidgetArea, self.__icon)
+            else:
+                mainwindow.add_dock_widget(self.__dock, Qt.RightDockWidgetArea)
             self.__dock.closeWidget.connect(self.__close_dock)
         else:
             self.__remove_dock()
