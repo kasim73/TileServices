@@ -159,7 +159,7 @@ class TmsWidget(QWidget):
         from urllib.request import Request, urlopen
         from pathlib import Path
         from axipy.app import Version
-        if QMessageBox.question(self.__plugin.window(), self.tr('Карты из Интернета'),
+        if QMessageBox.question(self.__plugin.window(), self.windowTitle(),
                 self.tr('Обновить данные?')) != QMessageBox.Yes:
             return
         file_name  = self.__tree.json_file
@@ -181,9 +181,13 @@ class TmsWidget(QWidget):
             QMessageBox.critical(self.__plugin.window(), self.tr('Ошибка'), str(error))
 
     def __help_triggered(self):
+        from axipy.app import Version, mainwindow
         file_name = self.__plugin.local_file(os.path.join('documentation', doc_index_filename(self.__plugin.language)))
         url = QUrl.fromLocalFile(file_name)
-        QDesktopServices.openUrl( url.toString() )
+        if Version.number() >= ((4 << 16) + (3 << 8)):
+            mainwindow.show_html_url(url, self.windowTitle())
+        else:
+            QDesktopServices.openUrl( url.toString() )
 
     def __treeItemCollapsed(self, item):
         self.action_expand.blockSignals(True)

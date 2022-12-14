@@ -50,8 +50,11 @@ class Plugin(AxiomaPlugin):
 
     def show_widget(self):
         if self.__dock is None:
-            self.__dock = DockWidget(self.tr('Карты из Интернета'))
-            self.__dock.setWidget(TmsWidget(self))
+            title = self.tr('Карты из Интернета')
+            self.__dock = DockWidget(title)
+            w = TmsWidget(self)
+            w.setWindowTitle(title)
+            self.__dock.setWidget(w)
             self.__dock.setAllowedAreas(Qt.LeftDockWidgetArea | Qt.RightDockWidgetArea)
             if (Version.segments()[0] >= 4):
                 mainwindow.add_dock_widget(self.__dock, Qt.RightDockWidgetArea, self.__icon)
