@@ -113,7 +113,7 @@ class TmsWidget(QWidget):
 
     @property
     def __update_url(self):
-        return  f'https://raw.githubusercontent.com/kasim73/TileServices/main/{json_filename(self.__plugin.language)}'
+        return  f'https://raw.githubusercontent.com/kasim73/TileServices/main/com_github_kasim73_tile_services/{json_filename(self.__plugin.language)}'
 
     def __url_clicked(self, url):
         QDesktopServices.openUrl (url.toString() )
@@ -164,6 +164,7 @@ class TmsWidget(QWidget):
             return
         file_name  = self.__tree.json_file
         try:
+            print('>>>>>>>>>>>', self.__update_url)
             req = Request(self.__update_url, headers={'User-Agent': 'Mozilla/5.0'})
             data = urlopen(req).read()
             try:
