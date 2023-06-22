@@ -164,7 +164,7 @@ class TmsWidget(QWidget):
             return
         file_name  = self.__tree.json_file
         try:
-            print('>>>>>>>>>>>', self.__update_url)
+            print('Url:', self.__update_url)
             req = Request(self.__update_url, headers={'User-Agent': 'Mozilla/5.0'})
             data = urlopen(req).read()
             try:
