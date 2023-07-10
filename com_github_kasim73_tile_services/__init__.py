@@ -37,7 +37,7 @@ class Plugin(AxiomaPlugin):
 
     def __remove_dock(self):
         if self.__dock is not None:
-            mainwindow.remove_dock_widget(self.__dock)
+            self.__dock.close()
             self.__dock = None
 
     def unload(self):
@@ -52,6 +52,7 @@ class Plugin(AxiomaPlugin):
         if self.__dock is None:
             title = self.tr('Карты из Интернета')
             self.__dock = DockWidget(title)
+            self.__dock.setAttribute(Qt.WA_DeleteOnClose)
             w = TmsWidget(self)
             w.setWindowTitle(title)
             self.__dock.setWidget(w)
