@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QtHelpProject version="1.0">
+    <namespace>com_github_kasim73_tile_services</namespace>
+    <virtualFolder>html</virtualFolder>
+    <filterSection>
+        <toc>
+            <section title="Карты из Интернета" ref="index_ru.html"/>
+        </toc>
+        <files>
+            <file>index_ru.html</file>
+        </files>
+    </filterSection>
+</QtHelpProject>
