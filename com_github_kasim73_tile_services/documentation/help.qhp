@@ -8,6 +8,7 @@
         </toc>
         <files>
             <file>index_ru.html</file>
+            <file>tms_icon.svg</file>
         </files>
     </filterSection>
 </QtHelpProject>
