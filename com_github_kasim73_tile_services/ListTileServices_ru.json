@@ -306,13 +306,6 @@
 					"url": "http://mt[0123].google.com/vt/lyrs=s&x={ROW}&y={COL}&z={LEVEL}"
 				},
 				{
-					"name": "google_satellite_1",
-					"title": "Спутник1",
-					"description": "Спутниковые снимки Google (альтернативный вариант). Спутниковые снимки в высоком разрешении для всего мира.<br/><a href=\"https://www.google.com/help/terms_maps\">©Google<\\a>",
-					"type": "xyz",
-					"url": "https://khms[0123].googleapis.com/kh?v=908&x={ROW}&y={COL}&z={LEVEL}"
-				},
-				{
 					"name": "google_hybrid_ru",
 					"title": "Гибрид (рус)",
 					"description": "Гибридная карта Google, состоящая из названий улиц и других объектов наложенных на спутниковые снимки Google.<br/><a href=\"https://www.google.com/help/terms_maps\">©Google<\\a>",
@@ -362,60 +355,76 @@
 			"image": "here",
 			"tms": [
 				{
+					"name": "here_terrain_en1",
+					"title": "Ландшафт (англ)",
+					"description": "Подробная карта HERRE на английском с рельефом и серыми дорогами.<br/><a href=\"https://legal.here.com/terms\">©HERE<\\a>",
+					"type": "xyz",
+					"url": "https://maps.hereapi.com/v3/base/mc/{LEVEL}/{ROW}/{COL}/jpeg?apiKey=ULcxipCuamEAS6NsNntuAMM84LddvMOlXH0BsE2RfaU&lang=en&style=satellite.day&size=256"
+				},
+				{
+					"name": "here_map_ru1",
+					"title": "Карта (рус)",
+					"description": "Подробная карта HERRE.<br/><a href=\"https://legal.here.com/terms\">©HERE<\\a>",
+					"type": "xyz",
+					"url": "https://[1234].base.maps.api.here.com/maptile/2.1/maptile/newest/normal.day/{LEVEL}/{ROW}/{COL}/256/png8?apiKey=ULcxipCuamEAS6NsNntuAMM84LddvMOlXH0BsE2RfaU&app_code=djPZyynKsbTjIUDOBcHZ2g&lg=rus&ppi=72&pview=DEF"
+				},
+				
+				{
 					"name": "here_map_ru",
 					"title": "Карта (рус)",
 					"description": "Подробная карта HERRE.<br/><a href=\"https://legal.here.com/terms\">©HERE<\\a>",
 					"type": "xyz",
-					"url": "https://[1234].base.maps.api.here.com/maptile/2.1/maptile/newest/normal.day/{LEVEL}/{ROW}/{COL}/256/png8?app_id=xWVIueSv6JL0aJ5xqTxb&app_code=djPZyynKsbTjIUDOBcHZ2g&lg=rus&ppi=72&pview=DEF"
+					"url": "https://[1234].base.maps.api.here.com/maptile/2.1/maptile/newest/normal.day/{LEVEL}/{ROW}/{COL}/256/png8?apiKey=ULcxipCuamEAS6NsNntuAMM84LddvMOlXH0BsE2RfaU&app_code=djPZyynKsbTjIUDOBcHZ2g&lg=rus&ppi=72&pview=DEF"
 				},
+			
 				{
 					"name": "here_map_en",
 					"title": "Карта (англ)",
 					"description": "Подробная карта HERRE на английском.<br/><a href=\"https://legal.here.com/terms\">©HERE<\\a>",
 					"type": "xyz",
-					"url": "https://[1234].base.maps.api.here.com/maptile/2.1/maptile/newest/normal.day/{LEVEL}/{ROW}/{COL}/256/png8?app_id=xWVIueSv6JL0aJ5xqTxb&app_code=djPZyynKsbTjIUDOBcHZ2g&lg=en&ppi=72&pview=DEF"
+					"url": "https://[1234].base.maps.api.here.com/maptile/2.1/maptile/newest/normal.day/{LEVEL}/{ROW}/{COL}/256/png8?apiKey=ULcxipCuamEAS6NsNntuAMM84LddvMOlXH0BsE2RfaU&app_code=djPZyynKsbTjIUDOBcHZ2g&lg=en&ppi=72&pview=DEF"
 				},
 				{
 					"name": "here_terrain_ru",
 					"title": "Ландшафт (рус)",
 					"description": "Подробная карта HERRE с рельефом и серыми дорогами.<br/><a href=\"https://legal.here.com/terms\">©HERE<\\a>",
 					"type": "xyz",
-					"url": "https://[1234].aerial.maps.api.here.com/maptile/2.1/maptile/newest/terrain.day/{LEVEL}/{ROW}/{COL}/256/png8?app_id=xWVIueSv6JL0aJ5xqTxb&app_code=djPZyynKsbTjIUDOBcHZ2g&lg=rus&ppi=72&pview=DEF"
+					"url": "https://[1234].aerial.maps.api.here.com/maptile/2.1/maptile/newest/terrain.day/{LEVEL}/{ROW}/{COL}/256/png8?apiKey=ULcxipCuamEAS6NsNntuAMM84LddvMOlXH0BsE2RfaU&app_code=djPZyynKsbTjIUDOBcHZ2g&lg=rus&ppi=72&pview=DEF"
 				},
 				{
 					"name": "here_terrain_en",
 					"title": "Ландшафт (англ)",
 					"description": "Подробная карта HERRE на английском с рельефом и серыми дорогами.<br/><a href=\"https://legal.here.com/terms\">©HERE<\\a>",
 					"type": "xyz",
-					"url": "https://[1234].aerial.maps.api.here.com/maptile/2.1/maptile/newest/terrain.day/{LEVEL}/{ROW}/{COL}/256/png8?app_id=xWVIueSv6JL0aJ5xqTxb&app_code=djPZyynKsbTjIUDOBcHZ2g&lg=en&ppi=72&pview=DEF"
+					"url": "https://[1234].aerial.maps.api.here.com/maptile/2.1/maptile/newest/terrain.day/{LEVEL}/{ROW}/{COL}/256/png8?apiKey=ULcxipCuamEAS6NsNntuAMM84LddvMOlXH0BsE2RfaU&app_code=djPZyynKsbTjIUDOBcHZ2g&lg=en&ppi=72&pview=DEF"
 				},
 				{
 					"name": "here_satellite",
 					"title": "Спутник",
 					"description": "Спутниковые снимки HERE. Спутниковые снимки в высоком разрешении для всего мира.<br/><a href=\"https://legal.here.com/terms\">©HERE<\\a>",
 					"type": "xyz",
-					"url": "https://[1234].aerial.maps.api.here.com/maptile/2.1/maptile/newest/satellite.day/{LEVEL}/{ROW}/{COL}/256/png8?app_id=xWVIueSv6JL0aJ5xqTxb&app_code=djPZyynKsbTjIUDOBcHZ2g&ppi=72&pview=DEF"
+					"url": "https://[1234].aerial.maps.api.here.com/maptile/2.1/maptile/newest/satellite.day/{LEVEL}/{ROW}/{COL}/256/png8?apiKey=ULcxipCuamEAS6NsNntuAMM84LddvMOlXH0BsE2RfaU&app_code=djPZyynKsbTjIUDOBcHZ2g&ppi=72&pview=DEF"
 				},
 				{
 					"name": "here_hybrid_ru",
 					"title": "Гибрид (рус)",
 					"description": "Гибридная карта HERE, состоящая из названий улиц и других объектов наложенных на спутниковые снимки HERE.<br/><a href=\"https://legal.here.com/terms\">©HERE<\\a>",
 					"type": "xyz",
-					"url": "https://[1234].aerial.maps.api.here.com/maptile/2.1/maptile/newest/hybrid.day/{LEVEL}/{ROW}/{COL}/256/png8?app_id=xWVIueSv6JL0aJ5xqTxb&app_code=djPZyynKsbTjIUDOBcHZ2g&lg=rus&ppi=72&pview=DEF"
+					"url": "https://[1234].aerial.maps.api.here.com/maptile/2.1/maptile/newest/hybrid.day/{LEVEL}/{ROW}/{COL}/256/png8?apiKey=ULcxipCuamEAS6NsNntuAMM84LddvMOlXH0BsE2RfaU&app_code=djPZyynKsbTjIUDOBcHZ2g&lg=rus&ppi=72&pview=DEF"
 				},
 				{
 					"name": "here_hybrid_en",
 					"title": "Гибрид (англ)",
 					"description": "Гибридная карта HERE на английском, состоящая из названий улиц и других объектов наложенных на спутниковые снимки HERE.<br/><a href=\"https://legal.here.com/terms\">©HERE<\\a>",
 					"type": "xyz",
-					"url": "https://[1234].aerial.maps.api.here.com/maptile/2.1/maptile/newest/hybrid.day/{LEVEL}/{ROW}/{COL}/256/png8?app_id=xWVIueSv6JL0aJ5xqTxb&app_code=djPZyynKsbTjIUDOBcHZ2g&lg=en&ppi=72&pview=DEF"
+					"url": "https://[1234].aerial.maps.api.here.com/maptile/2.1/maptile/newest/hybrid.day/{LEVEL}/{ROW}/{COL}/256/png8?apiKey=ULcxipCuamEAS6NsNntuAMM84LddvMOlXH0BsE2RfaU&app_code=djPZyynKsbTjIUDOBcHZ2g&lg=en&ppi=72&pview=DEF"
 				},
 				{
 					"name": "here_schema",
 					"title": "Схема",
 					"description": "Схема HERE на прозрачной подложке, состоящая из границ и дорог.<br/><a href=\"https://legal.here.com/terms\">©HERE<\\a>",
 					"type": "xyz",
-					"url": "https://[1234].base.maps.ls.hereapi.com/maptile/2.1/linetile/newest/normal.day/{LEVEL}/{ROW}/{COL}/256/png8?app_id=xWVIueSv6JL0aJ5xqTxb&app_code=djPZyynKsbTjIUDOBcHZ2g&lg=rus&ppi=72&pview=DEF"
+					"url": "https://[1234].base.maps.ls.hereapi.com/maptile/2.1/linetile/newest/normal.day/{LEVEL}/{ROW}/{COL}/256/png8?apiKey=ULcxipCuamEAS6NsNntuAMM84LddvMOlXH0BsE2RfaU&app_code=djPZyynKsbTjIUDOBcHZ2g&lg=rus&ppi=72&pview=DEF"
 
 				},
 				{
@@ -423,7 +432,7 @@
 					"title": "Схема тёмная",
 					"description": "Схема HERE на прозрачной подложке, состоящая из границ и дорог. Эта карта предназначена для использования с картами имеющих тёмный фон.<br/><a href=\"https://legal.here.com/terms\">©HERE<\\a>",
 					"type": "xyz",
-					"url": "https://[1234].aerial.maps.api.here.com/maptile/2.1/linetile/newest/hybrid.day/{LEVEL}/{ROW}/{COL}/256/png8?app_id=xWVIueSv6JL0aJ5xqTxb&app_code=djPZyynKsbTjIUDOBcHZ2g&lg=rus&ppi=72&pview=DEF"
+					"url": "https://[1234].aerial.maps.api.here.com/maptile/2.1/linetile/newest/hybrid.day/{LEVEL}/{ROW}/{COL}/256/png8?apiKey=ULcxipCuamEAS6NsNntuAMM84LddvMOlXH0BsE2RfaU&app_code=djPZyynKsbTjIUDOBcHZ2g&lg=rus&ppi=72&pview=DEF"
 
 				},
 				{
@@ -431,7 +440,7 @@
 					"title": "Названия (рус)",
 					"description": "Названия HERE на прозрачной подложке, состоящая из названий улиц и других объектов. Эта карта предназначена для использования с картами имеющих светлый фон.<br/><a href=\"https://legal.here.com/terms\">©HERE<\\a>",
 					"type": "xyz",
-					"url": "https://[1234].base.maps.ls.hereapi.com/maptile/2.1/labeltile/newest/normal.day/{LEVEL}/{ROW}/{COL}/256/png8?app_id=xWVIueSv6JL0aJ5xqTxb&app_code=djPZyynKsbTjIUDOBcHZ2g&lg=rus&ppi=72&pview=DEF"
+					"url": "https://[1234].base.maps.ls.hereapi.com/maptile/2.1/labeltile/newest/normal.day/{LEVEL}/{ROW}/{COL}/256/png8?apiKey=ULcxipCuamEAS6NsNntuAMM84LddvMOlXH0BsE2RfaU&app_code=djPZyynKsbTjIUDOBcHZ2g&lg=rus&ppi=72&pview=DEF"
 
 				},
 				{
@@ -439,7 +448,7 @@
 					"title": "Названия (англ)",
 					"description": "Названия HERE на английском на прозрачной подложке, состоящая из названий улиц и других объектов. Эта карта предназначена для использования с картами имеющих светлый фон.<br/><a href=\"https://legal.here.com/terms\">©HERE<\\a>",
 					"type": "xyz",
-					"url": "https://[1234].base.maps.ls.hereapi.com/maptile/2.1/labeltile/newest/normal.day/{LEVEL}/{ROW}/{COL}/256/png8?app_id=xWVIueSv6JL0aJ5xqTxb&app_code=djPZyynKsbTjIUDOBcHZ2g&lg=en&ppi=72&pview=DEF"
+					"url": "https://[1234].base.maps.ls.hereapi.com/maptile/2.1/labeltile/newest/normal.day/{LEVEL}/{ROW}/{COL}/256/png8?apiKey=ULcxipCuamEAS6NsNntuAMM84LddvMOlXH0BsE2RfaU&app_code=djPZyynKsbTjIUDOBcHZ2g&lg=en&ppi=72&pview=DEF"
 
 				},
 				{
@@ -447,21 +456,21 @@
 					"title": "Названия тёмные (рус)",
 					"description": "Названия HERE на прозрачной подложке, состоящая из названий улиц и других объектов. Эта карта предназначена для использования с картами имеющих тёмный фон.<br/><a href=\"https://legal.here.com/terms\">©HERE<\\a>",
 					"type": "xyz",
-					"url": "https://[1234].aerial.maps.api.here.com/maptile/2.1/labeltile/newest/hybrid.day/{LEVEL}/{ROW}/{COL}/256/png8?app_id=xWVIueSv6JL0aJ5xqTxb&app_code=djPZyynKsbTjIUDOBcHZ2g&lg=rus&ppi=72&pview=DEF"
+					"url": "https://[1234].aerial.maps.api.here.com/maptile/2.1/labeltile/newest/hybrid.day/{LEVEL}/{ROW}/{COL}/256/png8?apiKey=ULcxipCuamEAS6NsNntuAMM84LddvMOlXH0BsE2RfaU&app_code=djPZyynKsbTjIUDOBcHZ2g&lg=rus&ppi=72&pview=DEF"
 				},
 				{
 					"name": "here_names_dark_en",
 					"title": "Названия тёмные (англ)",
 					"description": "Названия HERE на английском на прозрачной подложке, состоящая из названий улиц и других объектов. Эта карта предназначена для использования с картами имеющих тёмный фон.<br/><a href=\"https://legal.here.com/terms\">©HERE<\\a>",
 					"type": "xyz",
-					"url": "https://[1234].aerial.maps.api.here.com/maptile/2.1/labeltile/newest/hybrid.day/{LEVEL}/{ROW}/{COL}/256/png8?app_id=xWVIueSv6JL0aJ5xqTxb&app_code=djPZyynKsbTjIUDOBcHZ2g&lg=en&ppi=72&pview=DEF"
+					"url": "https://[1234].aerial.maps.api.here.com/maptile/2.1/labeltile/newest/hybrid.day/{LEVEL}/{ROW}/{COL}/256/png8?apiKey=ULcxipCuamEAS6NsNntuAMM84LddvMOlXH0BsE2RfaU&app_code=djPZyynKsbTjIUDOBcHZ2g&lg=en&ppi=72&pview=DEF"
 				},
 				{
 					"name": "here_traffic",
 					"title": "Пробки",
 					"description": "Пробки Google на прозрачной подложке.<br/><a href=\"https://legal.here.com/terms\">©HERE<\\a>",
 					"type": "xyz",
-					"url": "https://[1234].traffic.maps.api.here.com/maptile/2.1/flowtile/newest/normal.day/{LEVEL}/{ROW}/{COL}/256/png8?app_id=xWVIueSv6JL0aJ5xqTxb&app_code=djPZyynKsbTjIUDOBcHZ2g&lg=en&ppi=72&pview=DEF",
+					"url": "https://[1234].traffic.maps.api.here.com/maptile/2.1/flowtile/newest/normal.day/{LEVEL}/{ROW}/{COL}/256/png8?apiKey=ULcxipCuamEAS6NsNntuAMM84LddvMOlXH0BsE2RfaU&app_code=djPZyynKsbTjIUDOBcHZ2g&lg=en&ppi=72&pview=DEF",
 					"level": {
 						"min" : 7,
 						"max" : 20
@@ -479,7 +488,8 @@
 					"title": "Спутник",
 					"description": "Спутниковые снимки Mapbox. Спутниковые снимки в высоком разрешении для всего мира.<br/><a href=\"https://www.mapbox.com/legal/tos\">©Mapbox<\\a>",
 					"type": "xyz",
-					"url": "https://api.tiles.mapbox.com/v4/mapbox.satellite/{LEVEL}/{ROW}/{COL}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw"
+					"url": "https://api.mapbox.com/v4/mapbox.satellite/{LEVEL}/{ROW}/{COL}.webp?sku=101GJw3CMQzGo&access_token=pk.eyJ1IjoiZXhhbXBsZXMiLCJhIjoiY2xxeTBib3pyMGsxcTJpbXQ3bmo4YXU0ZiJ9.wvqlBMQSxTHgvAh6l9OXXw",
+					"header": {"referer": "https://api.mapbox.com/"}
 				}
 			]
 		},
@@ -639,7 +649,7 @@
 					"title": "Советские топокарты",
 					"description": "",
 					"type": "xyz",
-					"url": "http://88.99.52.155/cgi-bin/tapp/tilecache.py/1.0.0/topomapper_v2/{LEVEL}/{ROW}/{COL}",
+					"url": "https://proxy.nakarte.me/http/88.99.52.155/tmg/{LEVEL}/{ROW}/{COL}",
 					"level": {
 						"min" : 0,
 						"max" : 13
@@ -651,23 +661,12 @@
       "name": "Росреестр",
       "image": "rosreestr",
       "tms": [
-       {
-					"name": "rosreestr_56",
-					"title": "Единая картоснова (ЕЭКО) v56",
-					"description": "Точность и полнота ЕЭКО позволяет использовать ее в качестве картографической основы (подложки, базовой карты, картографического фона) для отображения в наглядной форме пользовательской тематической информации, а также в качестве базовой геопривязанной информации для решения различных прикладных и расчетных задач (измерение площадей и координат любой точки или объекта в геодезических и прямоугольных координатах, в местной системе координат). <br/><a href=\"https://rosreestr.gov.ru/\">© Росреестр<\\a>",
-					"type": "xyz",
-					"url": "https://ngw.fppd.cgkipd.ru/tile/56/{LEVEL}/{ROW}/{COL}.png",
-					"level": {
-						"min" : 3,
-						"max" : 14
-					}
-        },
         {
 					"name": "rosreestr_38",
 					"title": "Единая картоснова (ЕЭКО) v38",
 					"description": "Точность и полнота ЕЭКО позволяет использовать ее в качестве картографической основы (подложки, базовой карты, картографического фона) для отображения в наглядной форме пользовательской тематической информации, а также в качестве базовой геопривязанной информации для решения различных прикладных и расчетных задач (измерение площадей и координат любой точки или объекта в геодезических и прямоугольных координатах, в местной системе координат). <br/><a href=\"https://rosreestr.gov.ru/\">© Росреестр<\\a>",
 					"type": "xyz",
-					"url": "https://ngw.fppd.cgkipd.ru/tile/38/{LEVEL}/{ROW}/{COL}.png",
+					"url": "https://nspd.gov.ru/cgk/map/38/tms/{LEVEL}/{ROW}/{COL}.png",
 					"level": {
 						"min" : 3,
 						"max" : 16

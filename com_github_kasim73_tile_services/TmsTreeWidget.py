@@ -9,7 +9,7 @@ import os
 import os.path
 import json
 
-from axipy import provider_manager, Layer
+from axipy import provider_manager, Layer, WebOpenData
 
 
 class TmsTreeWidget(QTreeWidget):
@@ -50,13 +50,18 @@ class TmsTreeWidget(QTreeWidget):
         return self.__plugin.local_file('ListTileServices_ru.json')
 
     def __open_tms(self, data):
+        web_data = WebOpenData()
+        if 'header' in data:
+            web_data.header = data['header']
         return provider_manager.tms.open(templateUrl = data['url'],
                                            type_address = data['typeAddress'],
                                            minLevel = data['min'] if 'min' in data else 0,
                                            maxLevel = data['max'] if 'max' in data else 19,
                                            size = data['tileSize'] if 'tileSize' in data else (256, 256),
                                            prj = data['prj'] if 'prj' in data else None,
-                                           live_time = data['liveTime'] if 'liveTime' in data else 0
+                                           live_time = data['liveTime'] if 'liveTime' in data else 0,
+                                           alias = data['title'] if 'title' in data else None,
+                                           extra_data = web_data
                                            )
 
     def __open_interactive(self, layer):
@@ -175,6 +180,8 @@ class TmsTreeWidget(QTreeWidget):
             data['prj'] = tms['cs']
         if 'liveTime' in tms:
             data['liveTime'] = tms['liveTime']
+        if 'header' in tms:
+            data['header'] = tms['header']
         return data
 
     def __parse_dict_data(self, data):
